@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: rgb(85, 188, 248);
+}
+
+.add{
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background-color: rgb(26, 185, 15);
+    color: white;
+    font-size: 20px;
+    margin: 2rem auto;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 10px;
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(206, 237, 254, 0.65);
+    padding: 1rem 1rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.icons button, .delete-icon button {
+    color: rgb(26, 185, 15);
+    cursor: pointer;
+    border: none;
+   background: none;
+   font-size: large;
+}
+
+
+.container .content {
+    width: 400px;
+    height: 38vh;
+    font-size: 20px;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+textarea{
+    width: 100%;
+    height: 38vh;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    resize: none;
+}
+
+.container .hide {
+    display: none;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input button {
+    background-color: rgb(26, 185, 15);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: .7rem 3.5rem;
+    font-size: 20px;
+    box-shadow: rgb(26, 185, 15) 0px 0px 50px 0px;
+    font-weight: 600;
+    cursor: pointer;
+}

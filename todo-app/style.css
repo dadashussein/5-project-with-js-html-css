@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container{
+    max-width: 100%;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+}
+
+h1{
+    color: #333;
+    text-align: center;
+    font-size: 4rem;
+    opacity: 0.8;
+}
+
+form{
+    margin: auto;
+    max-width: 100%;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.todo-item{
+    margin-top: 5px;
+   display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(242, 242, 242);
+    padding-bottom: 5px;
+}
+
+
+.todo-item input{
+    display: none;
+}
+
+.todo-item span{
+    font-size: 1.2rem;
+    color: #333;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.delete-todo {
+    font-size: 1.2rem;
+    border-radius: 50%;
+    background: none;
+    color: #333;
+    border-color: red;
+    cursor: pointer;
+}
+
+.delete-todo:hover{
+    background-color: #ccc;
+    color: black;
+}
+.tick{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tick:hover{
+    background-color: #ccc;
+}
+
+
+.done  span {
+    text-decoration: line-through;
+}
+
+.done .tick::before{
+    content: '\2713';
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.done .tick{
+    border-color: green;
+}
+
